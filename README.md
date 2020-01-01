@@ -24,7 +24,7 @@ There are
 $ cat events.txt | wc
     515    7150  109747
 ```
-627 events in total, of which
+515 events in total, of which
 ```bash
 $ grep Voertuigbrand events.txt | wc
      92    1175   18765
