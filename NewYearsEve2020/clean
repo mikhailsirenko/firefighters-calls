@@ -9,4 +9,4 @@ sed -e 's/<tr><td class="DT">//' \
 awk '$(NF)=","$(NF)' | \
 awk '$(NF - 1)=","$(NF - 1)' | \
 sed -e's/, /,/g' -e's/ ,/,/g' | \
-grep -v ontact 
+grep -v ontact >> cleanData.csv
