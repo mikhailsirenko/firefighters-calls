@@ -2,9 +2,9 @@
 Exploring and visualizing P2000 data, Dutch emergency services pager network.
 
 Data are scraped from [http://www.p2000-online.net/](http://www.p2000-online.net/) The website says "Op de juistheid van de berichten en de beschikbaarheid van de site worden geen
-garanties gegeven." i.e. there are no guarantees for the accuracy of the data. Same goed fo analysis, take it as is.
+garanties gegeven." i.e. there are no guarantees for the accuracy of the data. Same goes fo analysis, take it as is.
 
-## Car fires in Haglanden on New Years Eve 2020
+## Car fires in Haaglanden on New Years Eve 2020
 Directory NewYearsEve220 contains fire brigade messages in [Veiligheidsregio Haaglanden](https://www.vrh.nl/). Dataset retrieved ~9:30 on 1/1/2020, latest message on 07:31:24 1/1/2020, earliest message 22:41:48 on 29/12/2019.
 events.txt file contains the table rows filtered out of the html pages, which contain Md OR Mdx tags, describing the main headline of the events, type, streetname, municipality and capcode, between ~9:30 and ~9:39, so almost precisely 24 hours.
 
