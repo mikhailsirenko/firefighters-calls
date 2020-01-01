@@ -35,3 +35,5 @@ $ grep -E 'Voertuigbrand.*SGRAVH'  events.txt  | wc
      74     940   15076
 ```
 of which 74 are within The Hague municipality.
+
+Accoring to [GemiddeldGezien.nl](https://gemiddeldgezien.nl/gemiddelde-prijs-auto) an average new car in NL costs 25K Euro. In total about 2.3 M Euros worth of cars went up in flames in 24 hours. 
