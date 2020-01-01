@@ -29,7 +29,7 @@ $ cat events.txt | wc
 $ grep Voertuigbrand events.txt | wc
      92    1175   18765
 ```
-102 events are "Voertuigbrand" or vehicle fire,
+92 events are "Voertuigbrand" or vehicle fire,
 ```bash
 $ grep -E 'Voertuigbrand.*SGRAVH'  events.txt  | wc
      74     940   15076
