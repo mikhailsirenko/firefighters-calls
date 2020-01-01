@@ -1,2 +1,12 @@
 #!/bin/bash
-cat events.txt | sed -e 's/<tr><td class="DT">//' -e's/<\/td><td class="DT">/,/' -e's/<\/td><td class="Br">Brandweer<\/td><td class="Regio">Haaglanden<\/td><td class="Md*">/,/' -e's/<\/td><\/tr>//' | awk '$(NF)=","$(NF)' | awk '$(NF - 1)=","$(NF - 1)' | sed -e 's/ B/,B/' |  sed -e's/BDH-0\?/&/'
+cat events.txt | \
+sed -e 's/<tr><td class="DT">//' \
+-e's/<\/td><td class="DT">/,/' \
+-e's/<\/td><td class="Br">Brandweer<\/td><td class="Regio">Haaglanden<\/td><td class="Mdx*">/,/' \
+-e's/<\/td><\/tr>//' \
+-e 's/P . /&,/' \
+-e 's/BDH-.. /&,/' | \
+awk '$(NF)=","$(NF)' | \
+awk '$(NF - 1)=","$(NF - 1)' | \
+sed -e's/, /,/g' -e's/ ,/,/g' | \
+grep -v ontact 
