@@ -1,11 +1,12 @@
 # P2000
 Exploring and visualizing P2000 data, Dutch emergency services pager network.
 
-Data are scraped from [http://www.p2000-online.net/](http://www.p2000-online.net/)
+Data are scraped from [http://www.p2000-online.net/](http://www.p2000-online.net/) The website says "Op de juistheid van de berichten en de beschikbaarheid van de site worden geen
+garanties gegeven." i.e. there are no guarantees for the accuracy of the data. Same goed fo analysis, take it as is.
 
 ## Car fires in Haglanden on New Years Eve 2020
 Directory NewYearsEve220 contains fire brigade messages in [Veiligheidsregio Haaglanden](https://www.vrh.nl/). Dataset retrieved ~9:30 on 1/1/2020, latest message on 07:31:24 1/1/2020, earliest message 22:41:48 on 29/12/2019.
-events.txt file contains the table rows filtered out of the html pages, which contain Md OR Mdx tags, describing the main headline of the events, type, streetname, municipality and capcode.
+events.txt file contains the table rows filtered out of the html pages, which contain Md OR Mdx tags, describing the main headline of the events, type, streetname, municipality and capcode, between ~9:30 and ~9:39, so almost precisely 24 hours.
 
 Example row :
 ```html
@@ -21,16 +22,16 @@ Example row :
 There are 
 ```bash
 $ cat events.txt | wc
-    645    8981  137642
+    515    7150  109747
 ```
-645 events in total, of which
+627 events in total, of which
 ```bash
 $ grep Voertuigbrand events.txt | wc
-    102    1300   20786
+     92    1175   18765
 ```
-102 events are "Voertuigbrand" or vehicle fire, of which
+102 events are "Voertuigbrand" or vehicle fire,
 ```bash
 $ grep -E 'Voertuigbrand.*SGRAVH'  events.txt  | wc
-     82    1040   16692
+     74     940   15076
 ```
-are within The Hague municipality.
+of which 74 are within The Hague municipality.
