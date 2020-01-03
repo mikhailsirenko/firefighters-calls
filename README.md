@@ -39,4 +39,7 @@ of which 74 are within The Hague municipality.
 Accoring to [GemiddeldGezien.nl](https://gemiddeldgezien.nl/gemiddelde-prijs-auto) an average new car in NL costs 25K Euro. In total about 2.3 M Euros worth of cars went up in flames in 24 hours. 
 
 ![Histogram of car fires](https://github.com/igornikolic/P2000/blob/master/NewYearsEve2020/Autobranden_histogram.png)
+
 ![Cummulaative plot of car fires](https://github.com/igornikolic/P2000/blob/master/NewYearsEve2020/Autobranden_cumulatief.png)
+
+![Total firebrigate](https://github.com/igornikolic/P2000/blob/master/NewYearsEve2020/Brandweer_uitruk_cumulatief.png)
