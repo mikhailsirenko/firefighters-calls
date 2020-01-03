@@ -1,4 +1,6 @@
 #!/bin/bash
+rm cleanData.csv
+
 cat events.txt | \
 sed -e 's/<tr><td class="DT">//' \
 -e's/<\/td><td class="DT">/,/' \
