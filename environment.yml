@@ -1,0 +1,9 @@
+name: p2000
+channels:
+  - conda-forge
+dependencies:
+  - numpy
+  - matplotlib
+  - pandas
+  - geopandas
+  - contextily
