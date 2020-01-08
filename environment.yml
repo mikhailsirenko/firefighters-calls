@@ -1,6 +1,6 @@
 name: p2000
 channels:
-  - conda
+  - conda-forge
 dependencies:
   - numpy
   - matplotlib
