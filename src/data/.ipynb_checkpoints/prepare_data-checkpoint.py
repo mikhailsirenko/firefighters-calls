@@ -61,17 +61,6 @@ def select_ny(data, year, delta=1):
     return result
 
 def extract_categories(data, year, categories):
-    """
-    Extract call categories from the call messages
-    
-    Args:
-        data (DataFrame or GeoDataFrame) : Complete data set (not sliced by date)
-        year (int) : Year of interest
-        delta (int) : Catgories of interest
-    
-    Returns:
-        result (DataFrame or GeoDataFrame) : A subset of a specific year and categories
-    """
     ny = select_ny(data, year)
     j = []
     l = []
