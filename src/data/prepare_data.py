@@ -1,8 +1,6 @@
 import pandas as pd
-import geopandas
-
-import pandas as pd
-import geopandas
+import geopandas as gpd
+import numpy as np
 def prepare_gdf(data):
     """
     Prepare data and convert it to GeoDataFrame
@@ -28,6 +26,7 @@ def prepare_gdf(data):
     gdf = gpd.GeoDataFrame(
         data, geometry=gpd.points_from_xy(data["pmeLongitude"], data["pmeLatitude"])
     )
+
     gdf.crs = {"init": "epsg:4326"}
 
     print(f"Total number of records collected with assigned coordinates : {gdf.shape[0]}")
@@ -46,19 +45,14 @@ def select_ny(data, year, delta=1):
     Returns:
         result (DataFrame or GeoDataFrame) : A subset of a specific year and delta
     """
-    # We do not have the date earlier than 2017-01-01,
-    # therefore a separate case
     if year == 2017:
-        
-        # Define the begining and the end of the period of interest
         begin = pd.to_datetime("2017-01-01")
         end = pd.to_datetime("2017-01-" + str(delta))
         
     else:
-        begin = pd.to_datetime(str(year-1) + "-12-" + str(31 - delta))
+        begin = pd.to_datetime(str(year-1) + "-12-" + str(31 - delta + 1))
         end = pd.to_datetime(str(year) + "-01-" + str(1 + delta))
     
-    # Slice initial data set
     result = data[data["pmeTimeStamp"] > begin]
     result = result[result["pmeTimeStamp"] < end]
 
@@ -66,28 +60,27 @@ def select_ny(data, year, delta=1):
     
     return result
 
-def extract_categories(data, categories):
+def extract_categories(data, year, categories):
     """
-    Extract the reasons for the calls from the messages
+    Extract call categories from the call messages
     
     Args:
-        data (DataFrame or GeoDataFrame) : Initial data set
-        categories (list) : Categories/reasons of interest
-        
+        data (DataFrame or GeoDataFrame) : Complete data set (not sliced by date)
+        year (int) : Year of interest
+        delta (int) : Catgories of interest
+    
     Returns:
-        (i, l) (tuple) : Lists of indexes and correponding categories
+        result (DataFrame or GeoDataFrame) : A subset of a specific year and categories
     """
-    
-    i = []
+    ny = select_ny(data, year)
+    j = []
     l = []
-    
-    # Iterate over all messages and check whether or not the category of interest is inside
-    # If found, store the index and the category in lists and break
-    for index, row in data['pmeStrippedMessage'].iteritems():
+    for index, row in ny['pmeStrippedMessage'].iteritems():
         for category in categories:
             if category in row:
-                i.append(index)
+                j.append(index)
                 l.append(category)
                 break
-                
-    return (i, l)
+    result = ny.loc[j,:]
+    result['pmeCategory'] = l
+    return result

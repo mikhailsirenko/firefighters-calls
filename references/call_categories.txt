@@ -1,0 +1,13 @@
+* Buitenbrand afval/rommel = External fire waste
+* Brandmelding Melding Via Openbaar = Meldsysteem Fire Reporting Via Public Reporting System
+* Ongeval spoorvervoer letsel = Rail accident injury
+* Gebouwbrand woning = Building fire house
+* Assistentie ambu = Assistance ambulance
+* Assistentie politie = Assistance police
+* Stormschade = Storm damage
+* Wateroverlast = Waterlogging 
+* Liftopsluiting = Lift confinement
+* Buitenbrand container = Outdoor fire container
+* Persoon te water = Person in the water
+* Voertuigbrand = Vehicle fire
+* Dienstverlening = Services
