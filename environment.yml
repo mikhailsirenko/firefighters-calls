@@ -81,15 +81,6 @@ dependencies:
   - libtiff=4.1.0
   - libxml2=2.9.10
   - lz4-c=1.8.3
-  - m2w64-expat=2.1.1
-  - m2w64-gcc-libgfortran=5.3.0
-  - m2w64-gcc-libs=5.3.0
-  - m2w64-gcc-libs-core=5.3.0
-  - m2w64-gettext=0.19.7
-  - m2w64-gmp=6.1.0
-  - m2w64-libiconv=1.14
-  - m2w64-libwinpthread-git=5.0.0.4634.697f757
-  - m2w64-xz=5.2.2
   - markupsafe=1.1.1
   - matplotlib=3.1.2
   - matplotlib-base=3.1.2
@@ -97,7 +88,6 @@ dependencies:
   - mistune=0.8.4
   - mkl=2019.4
   - more-itertools=8.0.2
-  - msys2-conda-epoch=20160418
   - munch=2.5.0
   - nbconvert=5.6.1
   - nbformat=5.0.3
@@ -131,8 +121,6 @@ dependencies:
   - python=3.7.3
   - python-dateutil=2.8.1
   - pytz=2019.3
-  - pywin32=225
-  - pywinpty=0.5.7
   - pyzmq=18.1.1
   - qt=5.9.7
   - rasterio=1.1.2
@@ -153,14 +141,9 @@ dependencies:
   - tornado=6.0.3
   - traitlets=4.3.3
   - urllib3=1.25.7
-  - vc=14.1
-  - vs2015_runtime=14.16.27012
   - wcwidth=0.1.8
   - webencodings=0.5.1
   - wheel=0.33.6
-  - win_inet_pton=1.1.0
-  - wincertstore=0.2
-  - winpty=0.4.3
   - xerces-c=3.2.2
   - xz=5.2.4
   - yaml=0.2.2
@@ -177,4 +160,15 @@ dependencies:
     - traittypes==0.2.1
     - widgetsnbextension==3.5.1
 prefix: C:\Users\Mikhail\Anaconda3\envs\p2000
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
