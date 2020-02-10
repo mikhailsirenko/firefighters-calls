@@ -25,7 +25,7 @@ The main body of the project has the following structure.
 |
 ├── src                      <- Standalone scripts used for data gathering, preprocessing and visualization
 |
-├── visualization            
+├── visualizations            
 |   ├── kepler.gl.html       <- Interactive visualization created with Kepler.gl
 ```
 
