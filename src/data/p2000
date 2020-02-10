@@ -1,0 +1,3 @@
+#!/bin/bash
+STRING=$1
+wget http://www.p2000-online.net/p2000.php?Haaglanden=1 -O - | grep $STRING | awk '{for (i=8; i<=NF; i++) printf $i""FS ; print ""; system("speaker-test -t sine -f 1000 -l 1 >/dev/null 2>&1 & sleep .2 && kill -9 $! ")}'
