@@ -7,8 +7,7 @@ An exploratory data analysis (EDA) of New Year's Eves firefighter calls in the N
 The New Year's Eve period in the Netherlands involves many fireworks, fire damage, and increasing violence directed at first responders. There is an active societal debate about whether consumer fireworks should be banned. In order to support this debate, we have analyzed the data from the national emergency network called __P2000__, which is publicly available. We are focusing on __firefighters__ and will not consider police and medical services. The data sets were scraped and downloaded from two websites [p2000-online.net](http://p2000-online.net/) and [www.112-nederland.nl](www.112-nederland.nl).
 
 ## How to use this repo
-The project has the following structure.
-The data is avaialble under the data folder. The analysis, graphs and results of this project are stored in a Jupyter Notebook main.ipynb in the notebooks following folder. 
+The main body of the project has the following structure. 
 ```
 ├── data
 │   ├── processed            <- The final data sets used for the analysis
@@ -22,8 +21,9 @@ The data is avaialble under the data folder. The analysis, graphs and results of
 |
 ├── visualization            
 |   ├── kepler.gl.html       <- Interactive visualization created with Kepler.gl
-|
 ```
+
+If you would like to run the main notebook yourself, please, use the binder bage on the top of the page. 
 
 ## Contributing
 
