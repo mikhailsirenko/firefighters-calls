@@ -3,8 +3,7 @@
 # P2000
 Exploring and visualizing P2000 data, Dutch emergency services pager network.
 
-Data are scraped from [http://www.p2000-online.net/](http://www.p2000-online.net/) The website says "Op de juistheid van de berichten en de beschikbaarheid van de site worden geen
-garanties gegeven." i.e. there are no guarantees for the accuracy of the data. Same goes fo analysis, take it as is.
+The New Year's Eve period in the Netherlands involves many fireworks, fire damage, and increasing violence directed at first responders. There is an active societal debate about whether consumer fireworks should be banned. In order to support this debate, we have analyzed the data from the national emergency network called __P2000__, which is publicly available. We are focusing on __firefighters__ and will not consider police and medical services. The data sets were scraped and downloaded from two websites [p2000-online.net](http://p2000-online.net/) and [www.112-nederland.nl](www.112-nederland.nl).
 
 ## Car fires in Haaglanden on New Years Eve 2020
 Directory NewYearsEve220 contains fire brigade messages in [Veiligheidsregio Haaglanden](https://www.vrh.nl/). Dataset retrieved ~9:30 on 1/1/2020, latest message on 07:31:24 1/1/2020, earliest message 22:41:48 on 29/12/2019.
