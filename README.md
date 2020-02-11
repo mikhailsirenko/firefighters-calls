@@ -29,7 +29,7 @@ The main body of the project has the following structure.
 
 If you would like to run the main notebook yourself, please, use the binder bage on the top of the page.
 
-Feel free to experiment with the interactive visualization created with [Kepler.gl](https://kepler.gl). Just open the visualization folder, right-click on kepler.gl.html file to save it, open the downloaded file on your computer with any browser. There you can select the year, explore the regions of the calls and the corresponding message more closely.
+Feel free to experiment with the interactive visualization created with [Kepler.gl](https://kepler.gl). Just open the [visualization folder](https://github.com/mikhailsirenko/P2000/tree/master/visualizations), right-click on kepler.gl.html file to save it, open the downloaded file on your computer with any browser. There you can select the year, explore the regions of the calls and the corresponding message more closely.
 
 ## Main findings
 From the data we found that (see the figure below):
