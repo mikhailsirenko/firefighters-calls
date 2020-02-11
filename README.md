@@ -32,7 +32,7 @@ If you would like to run the main notebook yourself, please, use the binder bage
 ## Contributing & authors
 If you are interested in the project, please, either fork it and submit a pull request, or contact us via Twitter or email.
 
-_Mikhail Sirenko ([@mikhailsirenko](https://twitter.com/mikhailsirenko)), Trivik Verma ([@TrivikV](https://twitter.com/TrivikV)) and Igor Nikolic ([@ComplexEvo](https://twitter.com/ComplexEvo))_
+_Mikhail Sirenko_ [@mikhailsirenko](https://twitter.com/mikhailsirenko), _Trivik Verma_ [@TrivikV](https://twitter.com/TrivikV) and _Igor Nikolic_ [@ComplexEvo](https://twitter.com/ComplexEvo)
 
 ## License
 [BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)
