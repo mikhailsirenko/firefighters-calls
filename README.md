@@ -48,4 +48,4 @@ _Mikhail Sirenko_ [@mikhailsirenko](https://twitter.com/mikhailsirenko), _Trivik
 [MIT](https://opensource.org/licenses/MIT)
 
 ## Acknowledgements
-We would like to thank people who are running the website [p2000-online.net](http://p2000-online.net/) and _Ton Snoei_ with the team of [www.112-nederland.nl](www.112-nederland.nl).
+We would like to thank people who are running the website [p2000-online.net](https://p2000-online.net) and _Ton Snoei_ with the team of [112-nederland.nl](https://112-nederland.nl).
