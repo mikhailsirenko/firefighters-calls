@@ -45,7 +45,7 @@ If you are interested in the project, please, either fork it and submit a pull r
 _Mikhail Sirenko_ [@mikhailsirenko](https://twitter.com/mikhailsirenko), _Trivik Verma_ [@TrivikV](https://twitter.com/TrivikV) and _Igor Nikolic_ [@ComplexEvo](https://twitter.com/ComplexEvo)
 
 ## License
-[BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)
+[MIT](https://opensource.org/licenses/MIT)
 
 ## Acknowledgements
 We would like to thank people who are running the website [p2000-online.net](http://p2000-online.net/) and _Ton Snoei_ with the team of [www.112-nederland.nl](www.112-nederland.nl).
