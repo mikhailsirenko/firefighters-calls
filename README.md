@@ -47,3 +47,5 @@ _Mikhail Sirenko_ [@mikhailsirenko](https://twitter.com/mikhailsirenko), _Trivik
 ## License
 [BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)
 
+## Acknowledgements
+We would like to thank people who are running the website [p2000-online.net](http://p2000-online.net/) and _Ton Snoei_ with the team of [www.112-nederland.nl](www.112-nederland.nl).
