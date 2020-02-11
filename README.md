@@ -11,7 +11,7 @@ The analysis was made for __The Hague__. However, the data for Rotterdam and Ams
 ![](https://github.com/mikhailsirenko/P2000/blob/master/visualizations/kepler.gl.gif)
 
 ## How to use this repo
-The main body of the project has the following structure. 
+The main body of the project has the following structure:
 ```
 ├── data
 │   ├── processed            <- The final data sets used for the analysis
@@ -33,7 +33,7 @@ Feel free to experiment with the interactive visualization created with [Kepler.
 
 ## Main findings
 From the data we found that (see the figure below):
-1. Number of firefigther calls during the New Year's Eve period is significantly higher than on average.
+1. The number of firefigther calls made during New Year's Eve period is significantly higher than on average.
 2. This number is increasing from 2018 to 2020.   
 3. Based on the reason for the call, we can attempt to estimate the potential damage.
 
