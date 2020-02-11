@@ -30,10 +30,12 @@ The main body of the project has the following structure.
 If you would like to run the main notebook yourself, please, use the binder bage on the top of the page. 
 
 ## Main findings
-From the data we found that:
+```
+From the data we found that (see the figure below):
 - Number of firefigther calls during the New Year's Eve period is significantly higher than on average.
 - This number is increasing from 2018 to 2020.   
 - Based on the reason for the call, we can attempt to estimate the potential damage.
+```
 
 ![](https://github.com/mikhailsirenko/P2000/blob/master/figures/fig5.png)
 
