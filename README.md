@@ -1,47 +1,51 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/igornikolic/P2000/master?filepath=notebooks%2Fmain.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mikhailsirenko/P2000/master?filepath=notebooks%2Fmain.ipynb)
 
 # P2000
-Exploring and visualizing P2000 data, Dutch emergency services pager network.
+An exploratory data analysis (EDA) of New Year's Eves firefighter calls in the Netherlands.
 
-Data are scraped from [http://www.p2000-online.net/](http://www.p2000-online.net/) The website says "Op de juistheid van de berichten en de beschikbaarheid van de site worden geen
-garanties gegeven." i.e. there are no guarantees for the accuracy of the data. Same goes fo analysis, take it as is.
+## Introduction
+The New Year's Eve period in the Netherlands involves many fireworks, fire damage, and increasing violence directed at first responders. There is an active societal debate about whether consumer fireworks should be banned. In order to support this debate, we have analyzed the data from the national emergency network called __P2000__, which is publicly available. We are focusing on __firefighters__ and will not consider police and medical services. The data sets were scraped and downloaded from two websites [p2000-online.net](http://p2000-online.net/) and [www.112-nederland.nl](www.112-nederland.nl).
 
-## Car fires in Haaglanden on New Years Eve 2020
-Directory NewYearsEve220 contains fire brigade messages in [Veiligheidsregio Haaglanden](https://www.vrh.nl/). Dataset retrieved ~9:30 on 1/1/2020, latest message on 07:31:24 1/1/2020, earliest message 22:41:48 on 29/12/2019.
-events.txt file contains the table rows filtered out of the html pages, which contain Md OR Mdx tags, describing the main headline of the events, type, streetname, municipality and capcode, between ~9:30 and ~9:39, so almost precisely 24 hours.
+The analysis was made for __The Hague__. However, the data for Rotterdam and Amsterdam is also available (see data folder). The GIF below demonstrates how firefighter calls evloved during 2020 New Year's Eve.  
 
-Example row :
-```html
-<tr><td class="DT">01-01-20</td><td class="DT">00:49:15</td><td class="Br">Brandweer</td><td class="Regio">Haaglanden</td><td class="Md">P 1 BDH-05 Buitenbrand Vegelinsbos ZOETMR 155230</td></tr>
-<tr><td class="DT">01-01-20</td><td class="DT">00:49:06</td><td class="Br">Brandweer</td><td class="Regio">Haaglanden</td><td class="Md">P 1 BDH-09 Voertuigbrand Slijpmolen Gortmolen SGRAVH 159635</td></tr>
-<tr><td class="DT">01-01-20</td><td class="DT">00:48:05</td><td class="Br">Brandweer</td><td class="Regio">Haaglanden</td><td class="Md">P 2 BDH-16 Buitenbrand afval/rommel Scheepmakersingel DELFGW 155430</td></tr>
-<tr><td class="DT">01-01-20</td><td class="DT">00:44:59</td><td class="Br">Brandweer</td><td class="Regio">Haaglanden</td><td class="Md">P 1 BDH-08 Buitenbrand afval/rommel Marktweg SGRAVH 157630</td></tr>
-<tr><td class="DT">01-01-20</td><td class="DT">00:44:02</td><td class="Br">Brandweer</td><td class="Regio">Haaglanden</td><td class="Md">P 1 BDH-05 Autom. brand OMS Middin - Heemburgh Schiebroekstraat ZOETMR 155330</td></tr>
-<tr><td class="DT">01-01-20</td><td class="DT">00:43:14</td><td class="Br">Brandweer</td><td class="Regio">Haaglanden</td><td class="Md">P 1 BDH-06 Voertuigbrand Sasboutstraat Van Kinschotstraat DELFT 155530</td></tr>
-<tr><td class="DT">01-01-20</td><td class="DT">00:42:54</td><td class="Br">Brandweer</td><td class="Regio">Haaglanden</td><td class="Md">P 1 BDH-05 Buitenbrand afval/rommel Veursestraatweg LEIDDM 155130</td></tr>
+![](https://github.com/mikhailsirenko/P2000/blob/master/visualizations/kepler.gl.gif)
+
+## How to use this repo
+The main body of the project has the following structure. 
+```
+├── data
+│   ├── processed            <- The final data sets used for the analysis
+│
+├── figures                  <- High quality figures 
+│
+├── notebooks                
+│   ├── main.ipynb           <- The main notebook used for EDA
+│
+├── src                      <- Standalone scripts used for data gathering, preprocessing and visualization
+│
+├── visualizations            
+│   ├── kepler.gl.html       <- Interactive visualization created with Kepler.gl
 ```
 
-There are 
-```bash
-$ cat events.txt | wc
-    515    7150  109747
-```
-515 events in total, of which
-```bash
-$ grep Voertuigbrand events.txt | wc
-     92    1175   18765
-```
-92 events are "Voertuigbrand" or vehicle fire,
-```bash
-$ grep -E 'Voertuigbrand.*SGRAVH'  events.txt  | wc
-     74     940   15076
-```
-of which 74 are within The Hague municipality.
+If you would like to run the main notebook yourself, please, use the binder bage on the top of the page.
 
-Accoring to [GemiddeldGezien.nl](https://gemiddeldgezien.nl/gemiddelde-prijs-auto) an average new car in NL costs 25K Euro. In total about 2.3 M Euros worth of cars went up in flames in 24 hours. 
+Feel free to experiment with the interactive visualization created with [Kepler.gl](https://kepler.gl). Just open the [visualization folder](https://github.com/mikhailsirenko/P2000/tree/master/visualizations), right-click on kepler.gl.html file to save it, open the downloaded file on your computer with any browser. There you can select the year, explore the regions of the calls and the corresponding message more closely.
 
-![Histogram of car fires](https://github.com/igornikolic/P2000/blob/master/NewYearsEve2020/Autobranden_histogram.png)
+## Main findings
+From the data we found that (see the figure below):
+1. Number of firefigther calls during the New Year's Eve period is significantly higher than on average.
+2. This number is increasing from 2018 to 2020.   
+3. Based on the reason for the call, we can attempt to estimate the potential damage.
 
-![Cummulaative plot of car fires](https://github.com/igornikolic/P2000/blob/master/NewYearsEve2020/Autobranden_cumulatief.png)
+![](https://github.com/mikhailsirenko/P2000/blob/master/figures/fig5.png)
 
-![Total firebrigate](https://github.com/igornikolic/P2000/blob/master/NewYearsEve2020/Brandweer_uitruk_cumulatief.png)
+## Contributing & authors
+If you are interested in the project, please, either fork it and submit a pull request, or contact us via Twitter or email.
+
+_Mikhail Sirenko_ [@mikhailsirenko](https://twitter.com/mikhailsirenko), _Trivik Verma_ [@TrivikV](https://twitter.com/TrivikV) and _Igor Nikolic_ [@ComplexEvo](https://twitter.com/ComplexEvo)
+
+## License
+[MIT](https://opensource.org/licenses/MIT)
+
+## Acknowledgements
+We would like to thank people who are running the website [p2000-online.net](http://p2000-online.net/) and _Ton Snoei_ with the team of [www.112-nederland.nl](www.112-nederland.nl).
