@@ -3,8 +3,6 @@
 # P2000
 An exploratory data analysis (EDA) of New Year's Eves firefighter calls in the Netherlands.
 
-
-
 ## Introduction
 The New Year's Eve period in the Netherlands involves many fireworks, fire damage, and increasing violence directed at first responders. There is an active societal debate about whether consumer fireworks should be banned. In order to support this debate, we have analyzed the data from the national emergency network called __P2000__, which is publicly available. We are focusing on __firefighters__ and will not consider police and medical services. The data sets were scraped and downloaded from two websites [p2000-online.net](http://p2000-online.net/) and [www.112-nederland.nl](www.112-nederland.nl).
 
@@ -19,18 +17,23 @@ The main body of the project has the following structure.
 │   ├── processed            <- The final data sets used for the analysis
 │
 ├── figures                  <- High quality figures 
-|
+│
 ├── notebooks                
 │   ├── main.ipynb           <- The main notebook used for EDA
-|
+│
 ├── src                      <- Standalone scripts used for data gathering, preprocessing and visualization
-|
+│
 ├── visualizations            
-|   ├── kepler.gl.html       <- Interactive visualization created with Kepler.gl
+│   ├── kepler.gl.html       <- Interactive visualization created with Kepler.gl
 ```
 
 If you would like to run the main notebook yourself, please, use the binder bage on the top of the page. 
 
-## Contributing
+## Contributing & authors
+If you are interested in the project, please, either fork it and submit a pull request, or contact us via Twitter or email.
 
-## Contact
+_Mikhail Sirenko ([@mikhailsirenko](https://twitter.com/mikhailsirenko)), Trivik Verma ([@TrivikV](https://twitter.com/TrivikV)) and Igor Nikolic ([@ComplexEvo](https://twitter.com/ComplexEvo))_
+
+## License
+[BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)
+
