@@ -8,7 +8,7 @@ The New Year's Eve period in the Netherlands involves many fireworks, fire damag
 
 The analysis was made for __The Hague__. However, the data for __Rotterdam__ and __Amsterdam__ as well as interactive visualizations are also available (see data and visualizations folders). The GIF below demonstrates how firefighter calls evloved during 2020 New Year's Eve.  
 
-![](https://github.com/mikhailsirenko/P2000/blob/master/visualizations/kepler.gl.gif)
+![](https://github.com/mikhailsirenko/P2000/blob/master/visualizations/den_haag_2020.gif)
 
 ## How to use this repo
 The main body of the project has the following structure:
