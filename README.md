@@ -23,8 +23,11 @@ The main body of the project has the following structure:
 │
 ├── src                      <- Standalone scripts used for data gathering, preprocessing and visualization
 │
-├── visualizations            
-│   ├── den_haag.html       <- Interactive visualization created with Kepler.gl
+├── visualizations           <- Interactive visualizations created with Kepler.gl and GIFs            
+│   ├── den_haag.html        <- 2018, 2019 and 2020 New Year's Eve firefigther calls in The Hague
+│   ├── den_haag_2020.html   <- 2020 New Year's Eve firefigther calls iin The Hague
+│   ├── rottedam_2020.html   <- 2020 New Year's Eve firefigther calls in Rotterdam  
+│   ├── amsterdam_2020.html  <- 2020 New Year's Eve firefigther calls in Amsterdam
 ```
 
 If you would like to run the main notebook yourself, please, use the binder bage on the top of the page.
