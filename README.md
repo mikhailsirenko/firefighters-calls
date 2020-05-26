@@ -1,4 +1,5 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mikhailsirenko/P2000/master?filepath=notebooks%2Fmain.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mikhailsirenko/P2000/blob/master/notebooks/main.ipynb)
 
 # P2000
 An exploratory data analysis (EDA) of New Year's Eves firefighter calls in the Netherlands.
@@ -30,7 +31,7 @@ The main body of the project has the following structure:
 │   ├── amsterdam_2020.html  <- 2020 New Year's Eve firefigther calls in Amsterdam
 ```
 
-If you would like to run the main notebook yourself, please, use the binder bage on the top of the page.
+If you would like to run the main notebook yourself, please, use the binder or Google Colab (faster option) bages on the top of the page.
 
 Feel free to experiment with the interactive visualization created with [Kepler.gl](https://kepler.gl). Just open the [visualization folder](https://github.com/mikhailsirenko/P2000/tree/master/visualizations), right-click on `den_haag.html` file to save it, open the downloaded file on your computer with any browser. There you can select the year, explore the regions of the calls and the corresponding message more closely. If you interested only in 2020 New Year's Eve, check `den_haag_2020.html` file.
 
