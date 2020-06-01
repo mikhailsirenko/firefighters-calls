@@ -1,7 +1,0 @@
-#!/bin/bash
-
-for i in {1..43} #34
-do
-    wget -O $i.html "http://www.p2000-online.net/p2000.php?Haaglanden=1&Brandweer=1&Pagina=$i"
-    grep -E "class=\"Md|class=\"Mdx" $i.html >> events.txt
-done
