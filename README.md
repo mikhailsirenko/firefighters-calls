@@ -2,7 +2,7 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mikhailsirenko/P2000/blob/master/notebooks/main.ipynb)
 
 # P2000
-Exploratory data analysis of New Year's Eves firefighter calls in the Netherlands.
+An exploratory data analysis of New Year's Eves firefighter calls in the Netherlands.
 
 ## Introduction
 The New Year's Eve period in the Netherlands involves many fireworks, fire damage, and increasing violence directed at first responders. There is an active societal debate about whether consumer fireworks should be banned. In order to support this debate, we have analyzed the data from the national emergency network called __P2000__, which is publicly available. We are focusing on __firefighters__ and will not consider police and medical services. The data sets were scraped and downloaded from two websites [p2000-online.net](http://p2000-online.net/) and [www.112-nederland.nl](https://112-nederland.nl).
